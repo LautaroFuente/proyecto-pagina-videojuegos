@@ -27,11 +27,48 @@ a{
 
 /***** My Styles *****/
 
+article h2{
+    color: rgba(226, 86, 21, 0.904);;
+    text-decoration: underline;
+}
+
+article img{
+    width: 70%;
+    height: auto;
+    border: solid 2px orange;
+}
+
+article p{
+    color: var(--text-color);
+}
+
+.container-news{
+    text-align: center;
+   background-color:  rgba(36, 31, 31, 1);
+}
+
+.container-social{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgba(36, 31, 31, 1);
+}
+
 header{
     position: sticky;
     top:0;
     z-index: 999;
 }
+
+.icon-social{
+    font-size: 1.5rem;
+    color: rgba(189, 83, 34, 0.904);
+}
+
+.icon-social:hover{
+    color: rgba(255, 81, 0, 0.993);
+}
+
 
 .nav__list{
     display: flex;
@@ -53,6 +90,10 @@ header{
 .nav__list__item a:hover{
     color: rgba(226, 86, 21, 0.904);
     font-size: 1.3rem;
+}
+
+.new-1, .new-2, .new-3, .new-4{
+    padding: 1rem;
 }
 
 .logo{
@@ -89,6 +130,28 @@ header{
     .logo img{
         width: 10%;
         height: auto;
+    }
+
+    .new-1, .new-2, .new-3, .new-4{
+        display: grid;
+        grid-template-areas: 
+            "tittle tittle"
+            "img description"
+        ;
+        justify-items: center;
+        align-items: center;
+    }
+
+    article h2{
+        grid-area: tittle;
+    }
+    
+    article img{
+        grid-area: img;
+    }
+    
+    article p{
+        grid-area: description;
     }
 
 }
