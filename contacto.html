@@ -27,9 +27,19 @@
             <img src="img/favicon.png" alt="logo">
             <h1>LFjuegos</h1>
         </div>
-        <br><br><br>
-        <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minima voluptatum consequatur molestiae qui nulla dignissimos perspiciatis quaerat nesciunt harum, veniam optio cumque labore provident ex corrupti vel, inventore repellat.</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>¡Escribínos!</h2>
+        <div class="container-form">
+            <form  class="form" action="https://formsubmit.co/lautaro.fuente@yahoo.com" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                title="Nombre sólo acepta letras y espacios en blanco" required> 
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+                title="Formato de correo inválido" required>  
+                <textarea name="comentarios" placeholder="Escribe tu comentario" cols="30" rows="10" required></textarea>
+                <input class="submit" type="submit">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="container-social">

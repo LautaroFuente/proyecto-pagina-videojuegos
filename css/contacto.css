@@ -27,6 +27,12 @@ a{
 
 /***** My Styles *****/
 
+.container-form{
+    margin-top: 2rem;
+    background-color: rgba(36, 31, 31, 1);
+    border: solid 2px rgba(247,141,9,1);
+}
+
 .container-social{
     display: flex;
     justify-content: space-around;
@@ -34,10 +40,22 @@ a{
     background-color: rgba(36, 31, 31, 1);
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header{
     position: sticky;
     top:0;
     z-index: 999;
+}
+
+h2{
+    text-align: center;
+    color: var(--text-color);
+    font-size: xx-large;
 }
 
 .icon-social{
@@ -49,6 +67,27 @@ header{
     color: rgba(255, 81, 0, 0.993);
 }
 
+input,
+textarea,
+label{
+    width: 80%;
+    height: 10%;
+    margin: 0.5rem;
+}
+
+input{
+    border: 2px solid rgba(255, 81, 0, 0.993);
+    border-radius: 4px;
+    height: 2rem;
+}
+
+input:valid{
+    border-color: rgba(33, 170, 40, 0.973);
+}
+
+input:invalid{
+    border-color: rgba(170, 27, 27, 0.945);
+}
 
 .nav__list{
     display: flex;
@@ -72,6 +111,13 @@ header{
     font-size: 1.3rem;
 }
 
+label{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(255, 81, 0, 0.993);
+    font-weight: bold;
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -87,6 +133,24 @@ header{
 .logo img{
     width: 15%;
     height: auto;
+}
+
+.submit{
+    background-color: rgba(255, 81, 0, 0.993);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    font-weight: 900;
+    color:var(--text-color);
+}
+
+.submit:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+textarea {
+    resize: none;
 }
 
 /***** Medias queries *****/

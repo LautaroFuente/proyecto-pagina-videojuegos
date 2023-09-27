@@ -95,9 +95,8 @@ header{
 
 h2{
     padding: 1rem;
-    color: rgba(247,141,9,1);
+    color: var(--text-color);
     text-align: center;
-    text-decoration: underline;
 }
 
 .icon-social{
@@ -157,6 +156,13 @@ p{
     padding: 1rem;
     color: var(--text-color);
     text-align: center;
+}
+
+.tittle-card{
+    padding: 1rem;
+    color: rgba(247,141,9,1);
+    text-align: center;
+    text-decoration: underline;
 }
 
 /***** Medias queries *****/
